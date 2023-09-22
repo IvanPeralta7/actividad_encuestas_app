@@ -10,7 +10,7 @@ function Encuestas({ encuestas }) {
                 <li>{encuesta.pregunta}</li>
                     {encuesta.opciones.map((opcion) => (
                     <div>
-                        <input key={opcion} id={opcion} type="radio"/>
+                        <input key={opcion} name="opciones" type="radio"/>
                             <label>{opcion}</label>
                     </div>
                     ))}
